@@ -1,0 +1,240 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body{
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+}
+header{
+	width: 100%;
+	height: 50px;
+	margin-top: -10px;
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+.logo{
+	width: 20%;
+	line-height: 50px;
+	padding-top: 15px;
+}
+.menu ul{
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+.menu ul li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.menu ul li a{
+	text-decoration: none;
+	color: black;
+	padding-right: 10px;
+}
+.icon{
+	display: flex;
+	align-items: center;
+}
+.banner{
+	width: 100%;
+	min-height: 200px;
+}
+.underline-with-space {
+      position: relative;
+      display: inline-block;
+    } 
+.underline-with-space:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px; 
+      width: 100%;
+      border-bottom: 2px solid darkred;
+    }
+main h2{
+	color: grey;
+}
+main{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+.img-container{
+	position: relative;
+}
+.img-container:hover .overlay{
+	display: flex;
+	
+}
+.border-images{
+	border: 1px solid darkred;
+	padding: 5px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2; 
+}
+.overlay i {
+  margin: 5px;
+  padding: 7px;
+  background-color: darkred;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+.col-4{
+	margin-top: 10px;
+}
+.text-do{
+	color: red;
+	font-weight: bold;
+}
+.text{
+	display: flex;
+}
+.col-6{
+	padding: 0px;
+}
+.banner2{
+	width: 100%;
+	min-height: 100px;
+	margin: 0 auto;
+	position: relative;
+}
+.boxcha{
+	width: 100%;
+	min-height: 200px;
+	position: relative;
+}
+.caption{
+	width: 50%;
+	position: absolute;
+	top: 25px;
+	text-align: center;
+	left: 25%;
+	color: white;
+}
+.banner2 .col-2{
+	border: 1px solid white;
+}
+.banner2 .row{
+	position: absolute;
+	width: 70%;
+	left: 25%;
+	top: 40%;
+	z-index: 10;
+}
+.banner2 a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	margin: 10px;
+}
+.banner2 a:hover{
+	cursor: pointer;
+	color: red;
+}
+.banner2 p{
+	color: white;
+	margin: 10px;
+}
+.text2{
+	display: flex;
+	flex-direction: column;
+	
+}
+.container .title{
+	width: 40%;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 80px;
+} 
+.container .title p{
+	font-size: 16px;
+}
+.container .flex-column p{
+	color: darkred;
+	font-size: 14px;
+}
+.container .flex-column h2{
+	color: grey;
+	font-weight: bold;
+}
+.form-control button{
+	color: white;
+	background: orange;
+	border: 1px solid orange;
+	padding: 5px 30px;
+	border-radius: 50px;
+	margin-top: 10px;
+	align-content: center;
+	align-items: center;
+}
+.form-control form input[type="text"],
+.form-control form input[type="tel"],
+.form-control form input[type="email"],
+.form-control form textarea {
+        font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif"; 
+        font-size: 14px;
+        width: 100%; 
+        box-sizing: border-box; 
+        margin-bottom: 5px; 
+		padding: 3px;
+}
+.form-control{
+	position: absolute;
+	padding: 10px;
+	width: 30%;
+	top: 25%;
+	left: 35%;
+	border: 0.5px solid grey;
+	min-height: 100px;
+	box-shadow: 5px 5px 5px darkgrey;
+}
+.boxcha .caption h2{
+	font-size: 25px;
+	color: white;
+}
+#slider .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+#slider .owl-nav [class*='owl-'] {
+
+	font-size:100px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: #fff
+
+}
+#slider .owl-nav .owl-next{ position:absolute; right:5%;}
+#slider .owl-nav .owl-prev{ position:absolute; left:5%;}
+#slider .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color:darkred;
+      text-decoration: none; 
+}
+#slider .owl-dots{ 
+    position:absolute; bottom: 10px; left:47%;
+}
+#slider .owl-dots .owl-dot span {
+      width: 12px;
+      height: 12px; 
+}
+*#slider .owl-dots .owl-dot span {
+      width: 10px;
+      height: 10px;
+      margin: 4px 10px;
+      background: darkred;
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity 200ms ease;
+      border-radius: 30px; 
+}
+
+ #slider .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+      background: grey; 
+}
